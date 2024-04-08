@@ -349,9 +349,9 @@ editLink: false
 1. 音频标签 `<audio>`
 2. 视频标签 `<video>`
 
-#### 4.2.1 视频标签 
+#### 4.2.1 视频标签
 
-1. 只支持三种视频格式：MP4;WebM；Ogg
+1. 只支持三种视频格式：MP4; WebM; Ogg
 2. 尽量使用MP4
 3. 语法 `<video src="文件地址" controls="controls"></video>`
 
@@ -370,7 +370,7 @@ editLink: false
 
 #### 4.2.2 音频标签
 
-1. 只支持三种音频格式：MP3;Wav;Ogg
+1. 只支持三种音频格式：MP3; Wav; Ogg
 2. 都支持MP3
 3. 语法 `<audio src="文件地址" controls="controls"></audio>`
 4. 常见属性 ![音频常见属性.jpg](https://i.loli.net/2021/03/09/8KMULaAo41VZ7Ss.jpg)

@@ -1104,7 +1104,7 @@ body {
 2. 属性值
    * flex-start：默认值，从头部开始
    * flex-end：贴着尾部对齐
-   * center：在株洲居中对齐
+   * center：居中对齐
    * space-around：平分剩余空间
    * space-between：先两边贴边再平分剩余空间
 

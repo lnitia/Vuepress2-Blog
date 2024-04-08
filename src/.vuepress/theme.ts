@@ -12,7 +12,7 @@ export default hopeTheme({
     url: "http://xlinwork.online",
   },
 
-  iconAssets: "//at.alicdn.com/t/c/font_4406798_85ohdr42a34.css", //"fontawesome-with-brands",
+  iconAssets: "//at.alicdn.com/t/c/font_4406798_tozgiw6hrp.css", //"fontawesome-with-brands",
 
   favicon:"/favicon.ico",//网站图标
 

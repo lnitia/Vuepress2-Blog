@@ -20,7 +20,8 @@ export default navbar([
     icon: "folder",
     prefix: "/basics/",
     children: [
-      { text: "数据结构", icon: "package", link: "data structure" },
+      { text: "数据结构", icon: "data", link: "data structure" },
+      { text: "计算机网络", icon: "network", link: "computer network" },
     ],
   },
   {
@@ -36,6 +37,7 @@ export default navbar([
   {
     text: "项目",
     icon: "book",
-    link: "http://xlinwork.online/",
+    // link: "http://xlinwork.online/",
+    link: "/projects/",
   },
 ]);

@@ -15,7 +15,7 @@ editLink: false
 
 Unity UI Extensions：简单UI实现
 
-Modern UI Pack
+Modern UI Pack：开箱即用UI
 
 XCharts：表格
 

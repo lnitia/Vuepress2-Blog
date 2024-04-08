@@ -24,6 +24,13 @@ export default sidebar({
       link: "others/",
       children: "structure",
     },
+    {
+      text: "项目",
+      icon: "folder",
+      prefix: "projects/",
+      link: "projects/",
+      children: "structure",
+    },
     //"intro",
     // {
     //   text: "幻灯片",

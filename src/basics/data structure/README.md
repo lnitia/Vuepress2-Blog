@@ -1,7 +1,7 @@
 ---
 title: 1. 数据结构
 index: false
-icon: css3
+icon: data
 editLink: false
 article: false
 ---
