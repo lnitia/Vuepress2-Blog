@@ -62,7 +62,8 @@ export default hopeTheme({
     blog: true,
 
     searchPro: {
-      indexContent: true
+      indexContent: true,
+      autoSuggestions:false
     },
 
     // install @waline/client before enabling it

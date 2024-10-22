@@ -22,7 +22,7 @@ editLink: false
 方案：
 
 1. webRTC连接：MixedReality-WebRTC   [https://github.com/microsoft/MixedReality-WebRTC](https://github.com/microsoft/MixedReality-WebRTC)
-   插件：webRTC Video Chat
+   插件：webRTC Video Chat、Holo Video Chat
 2. 开源SDK：UnityChatSDK（仿dynamic365功能、付费）[https://github.com/ShanguUncle/UnityChatSDK/blob/master/README.zh.md](https://github.com/ShanguUncle/UnityChatSDK/blob/master/README.zh.md)
 3. DataMesh One
 

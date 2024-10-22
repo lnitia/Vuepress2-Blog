@@ -1349,9 +1349,9 @@ tree.insert(6)
 
 ### 7.3 树的遍历
 
-遍历一个树是指访问树的每个节点并对它们进行某种操作的过程，访问树的所有节点有三种方式：中序、先序和后序
+遍历一个树是指访问树的每个节点并对它们进行某种操作的过程，访问树的所有节点有三种方式：中序、先序和后序（先中后指根节点的顺序，其他遵循先左后右）
 
-#### 7.3.1 中序遍历
+#### 7.3.1 中序遍历（左中右）
 
 中序遍历是一种以上行顺序访问 `BST`所有节点的遍历方式，即以从最小到最大的顺序访问所有节点
 
@@ -1381,7 +1381,7 @@ tree.inOrderTraverse(printNode) // 依次输出：3 5 6 7 8 9 10 11 12 13 14 15 
 
 ![img](https://cdn.jsdelivr.net/gh/lnitia/MyPictures@main/blogpictures/20240116215027.png)
 
-#### 7.3.1 先序遍历
+#### 7.3.1 先序遍历（中左右）
 
 以优先于后代节点的顺序访问每个节点，即先访问节点本身，然后再访问它的左侧节点，最后访问右侧节点
 
@@ -1407,7 +1407,7 @@ tree.preOrderTraverse(printNode) // 依次输出：11 7 5 3 6 9 8 10 15 13 12 14
 
 ![img](https://cdn.jsdelivr.net/gh/lnitia/MyPictures@main/blogpictures/20240116215321.png)
 
-#### 7.3.3 后序遍历
+#### 7.3.3 后序遍历（左右中）
 
 先访问节点的后代节点，再访问节点本身
 
@@ -1826,11 +1826,12 @@ function quick(arr, left, right) {
        quick(arr, index, right);
     }
   }
+  return arr
 }
 
 function partition(arr, left, right) {
-  const pivot = arr[Math.floor((left+right)/2)],
-  let i = left,
+  const pivot = arr[Math.floor((left+right)/2)];
+  let i = left;
   let j = right;
   while(i <= j) {
     while(arr[i] < pivot) {

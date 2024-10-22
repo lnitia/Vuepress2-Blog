@@ -206,7 +206,7 @@ btn.onclick = function(){
    * 空或者false，则是浅拷贝。只克隆复制节点本身，不克隆里面的子节点
    * true，则是深拷贝。隆复制节点本身和里面的子节点
 
-### 1.6 事件高级
+### 1.6 高级事件
 
 #### 1.6.1 注册事件
 
@@ -219,7 +219,7 @@ btn.onclick = function(){
 ##### 方法监听
 
 1. w3c标准 推荐方式
-2. `DOM.addEventListener(type,listener[,useCapture])`是一个方法
+2. `DOM.addEventListener(type,listener,[useCapture])`是一个方法
 3. 同一个元素同一个事件可以注册多个监听器
 4. type：事件类型字符串，比如click、mouseover，注意不要带on
 5. listener：事件处理函数，事件发生时，会调用该监听函数
@@ -234,7 +234,7 @@ btn.onclick = function(){
 
 ##### 方法监听
 
-1. `DOM.removeEventListener(type,listener[,useCapture])`
+1. `DOM.removeEventListener(type,listener,[useCapture])`
 
 #### 1.6.3 DOM事件流
 
@@ -320,7 +320,7 @@ btn.onclick = function(){
 
 1. 语法 `window.onload = function(){}`或者 `window.addEventListener("load",function(){})`
 2. window.onload是窗口加载事件，当文档内容完全加载完成才会触发该事件
-3. 有了window.onload就可以吧JS代码写到页面元素的上方
+3. 有了window.onload就可以把JS代码写到页面元素的上方
 4. window.onload传统注册事件方式只能写一次，如果有多个会以最后一个为准
 5. 如果使用addEventListener没有个数限值
 6. 有一个类似的事件 `document.addEventListener('DOMContentLoaded',function(){})`，仅当DOM加载完成，不包括样式表，图片，flash等，ie9以上才支持
@@ -365,7 +365,7 @@ btn.onclick = function(){
 1. 语法 `window.clearInterval(interval ID)`
 2. 与停止setTimeout一致
 
-#### 2.3.6 this
+#### 2.3.6 this指向
 
 1. 函数定义的时候无法确认，函数被调用的时候才能确定this指向谁，一般指向调用它的对象
 2. 全局作用域或者普通函数中this指向全局对象window
@@ -385,7 +385,7 @@ btn.onclick = function(){
 
 1. 为了解决JS执行过长渲染不连贯的问题，利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，JS出现同步和异步
 2. 同步：前一个任务结束后再执行后一个任务，程序的执行顺序与任务的排列顺序是一致的、同步的
-3. 异步：在做一件事的同事还可以处理其他的事情
+3. 异步：在做一件事的同时还可以处理其他的事情
 4. JS把任务分成两种
    * 同步任务：同步任务都在主线程上执行，形成一个执行栈
    * 异步任务：JS的异步任务是通过回调函数实现的

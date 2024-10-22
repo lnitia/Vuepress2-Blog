@@ -26,7 +26,7 @@ export default sidebar({
     },
     {
       text: "项目",
-      icon: "folder",
+      icon: "book",
       prefix: "projects/",
       link: "projects/",
       children: "structure",
